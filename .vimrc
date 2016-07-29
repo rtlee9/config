@@ -84,6 +84,8 @@ nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
 
+vnoremap r :w !python<CR>
+
 " "------------------------------------------------------------
 " Mappings {{{1
 "
