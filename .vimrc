@@ -18,6 +18,7 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'davidhalter/jedi-vim'
 
 " Color schemes
 Plugin 'jnurmine/Zenburn'
