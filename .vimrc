@@ -56,6 +56,9 @@ set splitright
 set ignorecase
 set smartcase
 
+" Set paste mode
+set pastetoggle=<F2>
+
 " Enable use of the mouse for all modes
 set mouse=a
 
