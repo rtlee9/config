@@ -64,6 +64,9 @@ set pastetoggle=<F2>
 " Enable use of the mouse for all modes
 set mouse=a
 
+" Allow backspacing outside of recently inserted
+set backspace=indent,eol,start
+
 " Syntastic settings (default)
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
