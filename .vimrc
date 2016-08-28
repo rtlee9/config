@@ -42,6 +42,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_loc_list_height=3
 
 " Color Scheme
 set t_Co=256 " says terminal has 256 colors
@@ -67,9 +68,6 @@ set mouse=a
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
-" let g:pep8_ignore="E402"
-
 
 " Usability settings
 set confirm
