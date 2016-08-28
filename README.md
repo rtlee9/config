@@ -1,2 +1,2 @@
-# VIM_config
-VIM configuration files and notes.
+# Config files
+Configuration files for VIM and tmux.
