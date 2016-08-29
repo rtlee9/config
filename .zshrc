@@ -51,9 +51,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler osx rake ruby zsh-autosuggestions)
-
-source $ZSH/oh-my-zsh.sh
+plugins=(git bundler osx rake ruby zsh-autosuggestions zsh-syntax-highlighting)
 
 # User configuration
 
@@ -89,3 +87,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+source $ZSH/oh-my-zsh.sh
+source $ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
