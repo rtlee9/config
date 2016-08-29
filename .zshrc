@@ -51,15 +51,9 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler osx rake ruby zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git bundler osx rake ruby zsh-syntax-highlighting)
 
 # User configuration
-
-# bind ctrl + space to accept autosuggest
-bindkey '^ ' autosuggest-accept
-
-# Make autosuggest less prominent
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
