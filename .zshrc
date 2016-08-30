@@ -53,7 +53,19 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(tmux git bundler osx rake ruby zsh-syntax-highlighting)
 
+source $ZSH/oh-my-zsh.sh
+
 # User configuration
+
+# Homebrew
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+
+# added by Anaconda2 4.1.1 installer
+export PATH="/Users/Ryan/anaconda/bin:$PATH"
+
+# Save more bash history
+HISTSIZE=5000
+HISTFILESIZE=10000
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -82,5 +94,7 @@ plugins=(tmux git bundler osx rake ruby zsh-syntax-highlighting)
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source $ZSH/oh-my-zsh.sh
+# Force tmux to use 256 color
+alias tmux='_zsh_tmux_plugin_run -2'
+
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
