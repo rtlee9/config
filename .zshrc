@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/Ryan/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -61,7 +61,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # added by Anaconda2 4.1.1 installer
-export PATH="/Users/Ryan/anaconda/bin:$PATH"
+export PATH="~/anaconda/bin:$PATH"
 
 # Save more bash history
 HISTSIZE=5000
