@@ -94,6 +94,8 @@ HISTFILESIZE=10000
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+eval "$(pyenv init -)"
+
 # Force tmux to use 256 color
 alias tmux='_zsh_tmux_plugin_run -2'
 
