@@ -52,6 +52,9 @@ let g:molokai_original = 1
 let g:rehash256 = 1
 colorscheme molokai
 
+" Force md syntax based on postfix
+au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+
 " Set split directions
 set splitbelow
 set splitright
