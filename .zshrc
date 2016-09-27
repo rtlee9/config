@@ -9,6 +9,8 @@ export ZSH=~/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
+alias tmux="TERM=screen-256color-bce tmux"
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -73,6 +75,7 @@ HISTFILESIZE=10000
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
+export EDITOR=vim
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
