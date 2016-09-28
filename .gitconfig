@@ -1,0 +1,5 @@
+[user]
+        name = Ryan Lee
+        email = ryantlee9@gmail.com
+[merge]
+        tool = vimdiff
