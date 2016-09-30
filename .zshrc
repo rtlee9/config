@@ -99,6 +99,8 @@ export EDITOR=vim
 
 eval "$(pyenv init -)"
 
+export PATH="/Users/Ryan/anaconda2/bin:$PATH"
+
 # Force tmux to use 256 color
 alias tmux='_zsh_tmux_plugin_run -2'
 

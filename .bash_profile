@@ -29,3 +29,6 @@ alias tmux='tmux -2'
 # Save more bash history
 HISTSIZE=5000
 HISTFILESIZE=10000
+
+# added by Anaconda2 4.2.0 installer
+export PATH="/Users/Ryan/anaconda2/bin:$PATH"
