@@ -105,3 +105,6 @@ export PATH="/Users/Ryan/anaconda2/bin:$PATH"
 alias tmux='_zsh_tmux_plugin_run -2'
 
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+. /Users/Ryan/torch/install/bin/torch-activate
