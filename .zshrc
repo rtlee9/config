@@ -105,6 +105,8 @@ export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 # Force tmux to use 256 color
 alias tmux='_zsh_tmux_plugin_run -2'
 
+export PATH="$HOME/miniconda3/bin:$PATH"
+
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
