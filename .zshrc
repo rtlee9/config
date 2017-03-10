@@ -112,4 +112,6 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 
+export PATH="$HOME/miniconda3/bin:$PATH"
+
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
