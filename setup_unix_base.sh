@@ -40,3 +40,10 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # install plugins
 vim +PluginInstall +qall
+
+# *********************************************
+# miscellany
+# *********************************************
+sudo apt-get install zip
+sudo apt-get install virtualenv
+export QT_QPA_PLATFORM=offscreen
