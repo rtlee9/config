@@ -18,3 +18,6 @@ conda install pytorch torchvision -c soumith
 sudo apt-get install python-qt4
 pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.0.1-cp36-cp36m-linux_x86_64.whl
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64
+
+# Miscellany
+pip install pipreqs
