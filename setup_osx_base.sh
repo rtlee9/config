@@ -60,3 +60,6 @@ vim +PluginInstall +qall
 # miscellany
 # *********************************************
 export QT_QPA_PLATFORM=offscreen
+
+# fix pbcopy
+brew install reattach-to-user-namespace
