@@ -5,13 +5,6 @@ rm -rf .git
 cd config
 
 # *********************************************
-# miscellany
-# *********************************************
-brew install wget
-brew install python
-pip install virtualenv
-
-# *********************************************
 # brew setup
 # *********************************************
 
@@ -19,7 +12,14 @@ pip install virtualenv
 brew update
 
 # install brew packages
-brew install tmux zsh zsh-completions zsh-syntax-highlighting autoenv
+brew install python tmux zsh zsh-completions zsh-syntax-highlighting autoenv wget
+
+
+# *********************************************
+# miscellany
+# *********************************************
+
+pip install virtualenv flake8
 
 # *********************************************
 # ZSH setup
