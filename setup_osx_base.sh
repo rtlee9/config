@@ -5,34 +5,30 @@ rm -rf .git
 cd config
 
 # *********************************************
-# miscellany
-# *********************************************
-brew install wget
-brew install python
-pip install virtualenv
-
-# *********************************************
-# tmux setup
+# brew setup
 # *********************************************
 
 # update brew to ensure we have the latest packages
 brew update
 
-# install tmux
-brew install tmux
+# install brew packages
+brew install python tmux zsh zsh-completions zsh-syntax-highlighting autoenv wget
+
+
+# *********************************************
+# miscellany
+# *********************************************
+
+pip install virtualenv flake8
 
 # *********************************************
 # ZSH setup
 # *********************************************
 
-# install zsh
-brew install zsh zsh-completions
-
 # set zsh as default shell
 chsh -s $(which zsh)
 
-# install Oh My Zsh
-brew install zsh-syntax-highlighting
+# setup Oh My Zsh
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 # source zsh config
