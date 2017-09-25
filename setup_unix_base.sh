@@ -5,21 +5,18 @@ rm -rf .git
 cd config
 
 # *********************************************
-# tmux setup
+# General system installations
 # *********************************************
 
 # update apt to ensure we have the latest packages
 sudo apt-get update
 
-# install tmux
-sudo apt-get install tmux
+# install packages
+sudo apt-get install tmux git vim zsh zip virtualenv
 
 # *********************************************
 # ZSH setup
 # *********************************************
-
-# install zsh
-sudo apt-get install zsh
 
 # set zsh as default shell
 sudo chsh $USER -s $(which zsh);
@@ -36,9 +33,6 @@ source .zshrc
 # VIM setup
 # *********************************************
 
-# install VIM
-sudo apt-get install vim
-
 # install Vundle plugin manager
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
@@ -48,6 +42,4 @@ vim +PluginInstall +qall
 # *********************************************
 # miscellany
 # *********************************************
-sudo apt-get install zip
-sudo apt-get install virtualenv
 export QT_QPA_PLATFORM=offscreen
