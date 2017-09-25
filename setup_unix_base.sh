@@ -36,6 +36,9 @@ source .zshrc
 # VIM setup
 # *********************************************
 
+# install VIM
+sudo apt-get install vim
+
 # install Vundle plugin manager
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
