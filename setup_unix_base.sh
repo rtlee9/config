@@ -58,6 +58,14 @@ source .zshrc
 # install Vundle plugin manager
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+# install powerline fonts
+git clone https://github.com/powerline/fonts.git
+# install
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
 # install plugins
 vim +PluginInstall +qall
 
