@@ -37,6 +37,13 @@ git config --global color.diff.new        "green bold"
 git config --global color.diff.whitespace "red reverse"
 
 # *********************************************
+# tmux setup
+# *********************************************
+
+# consistent shading for VIM in tmux
+export TERM=screen-256color
+
+# *********************************************
 # ZSH setup
 # *********************************************
 
