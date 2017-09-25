@@ -3,3 +3,5 @@
         email = ryantlee9@gmail.com
 [merge]
         tool = vimdiff
+[core]
+	editor = vim
