@@ -106,4 +106,10 @@ alias tmux="TERM=screen-256color-bce tmux"
 
 export PATH="$HOME/miniconda3/bin:$PATH"
 
+# pyenv
+export PATH="/home/ryan/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
