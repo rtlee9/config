@@ -9,7 +9,6 @@ export ZSH=~/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
-alias tmux="TERM=screen-256color-bce tmux"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -103,7 +102,7 @@ alias help='tldr'
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 # Force tmux to use 256 color
-alias tmux='_zsh_tmux_plugin_run -2'
+alias tmux="TERM=screen-256color-bce tmux"
 
 export PATH="$HOME/miniconda3/bin:$PATH"
 
