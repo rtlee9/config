@@ -7,6 +7,12 @@ git checkout ML
 sudo apt-get install python3-pip
 pip3 install --upgrade
 
+# install redis
+wget http://download.redis.io/redis-stable.tar.gz
+tar xvzf redis-stable.tar.gz
+cd redis-stable
+make
+
 # install CUDA
 wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run -O ~/cuda.sh
 sudo sh ~/cuda.sh
