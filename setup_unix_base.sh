@@ -43,3 +43,8 @@ vim +PluginInstall +qall
 # miscellany
 # *********************************************
 export QT_QPA_PLATFORM=offscreen
+
+# *********************************************
+# pyenv
+# *********************************************
+curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
