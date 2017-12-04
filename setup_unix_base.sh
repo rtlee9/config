@@ -12,7 +12,7 @@ cd config
 sudo apt-get update
 
 # install packages
-sudo apt-get install tmux git vim zsh zip virtualenv python-pip
+sudo apt-get install tmux git vim zsh zip virtualenv python-pip python3-tk python-qt4
 
 # *********************************************
 # ZSH setup
