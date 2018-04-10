@@ -15,12 +15,12 @@ Plugin 'gmarik/Vundle.vim'
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 Plugin 'vim-scripts/indentpython.vim'
-Plugin 'scrooloose/syntastic'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'w0rp/ale'
 
 " Color schemes
 Plugin 'jnurmine/Zenburn'
@@ -37,14 +37,15 @@ set nu
 let python_highlight_all=1
 syntax on
 
-let g:syntastic_python_checkers=["flake8"]
-let g:syntastic_python_flake8_args ="--ignore=E402,E501,E302"
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_loc_list_height=3
+let g:ale_linters = {'python': ['flake8', 'pylint']}
+let b:ale_fixers = {'python': ['autopep8', 'yapf']}
+let g:ale_python_flake8_use_global = 1
+let g:ale_python_pylint_use_global = 1
+let g:ale_set_loclist = 1
+let g:ale_set_quickfix = 0
+let g:ale_open_list = 1
+let g:ale_list_window_size = 5
+let g:ale_python_flake8_options ="--ignore=E402,E501,E302"
 
 " Color Scheme
 set t_Co=256 " says terminal has 256 colors
@@ -71,11 +72,6 @@ set mouse=a
 
 " Allow backspacing outside of recently inserted
 set backspace=indent,eol,start
-
-" Syntastic settings (default)
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 
 " Usability settings
 set confirm
