@@ -38,7 +38,7 @@ let python_highlight_all=1
 syntax on
 
 let g:ale_linters = {'python': ['flake8', 'pylint']}
-let b:ale_fixers = {'python': ['autopep8', 'yapf']}
+let g:ale_fixers = {'python': ['autopep8', 'yapf']}
 let g:ale_python_flake8_use_global = 1
 let g:ale_python_pylint_use_global = 1
 let g:ale_set_loclist = 1
