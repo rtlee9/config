@@ -14,6 +14,9 @@ sudo apt-get update
 # install packages
 sudo apt-get install tmux git vim zsh zip virtualenv python-pip python3-tk python-qt4
 
+# install python linters
+pip install flake8 pylint yapf autopep8
+
 # *********************************************
 # ZSH setup
 # *********************************************
