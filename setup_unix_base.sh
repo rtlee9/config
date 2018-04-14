@@ -9,6 +9,7 @@ cd config
 # *********************************************
 
 # update apt to ensure we have the latest packages
+sudo add-apt-repository ppa:jonathonf/vim  # VIM8.0
 sudo apt-get update
 
 # install packages
