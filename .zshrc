@@ -59,12 +59,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# Homebrew
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-
-# added by Anaconda2 4.1.1 installer
-export PATH="~/anaconda/bin:$PATH"
-
 # Save more bash history
 HISTSIZE=5000
 HISTFILESIZE=10000
@@ -97,7 +91,6 @@ export EDITOR=vim
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="/Users/Ryan/anaconda2/bin:$PATH"
 alias cat='bat'
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 # add support for ctrl+o to open selected file in VS Code
