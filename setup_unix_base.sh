@@ -13,10 +13,28 @@ sudo add-apt-repository ppa:jonathonf/vim  # VIM8.0
 sudo apt-get update
 
 # install packages
-sudo apt-get install tmux git vim zsh zip virtualenv python-pip python3-tk python-qt4
+sudo apt-get install tmux git vim zsh zip virtualenv python-pip python3-tk python-qt4 build-essential curl file
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+brew install gcc bat noti fzf htop fd ncdu tldr ack diff-so-fancy
+pip install tldr
+curl -L $(curl -s https://api.github.com/repos/variadico/noti/releases/latest | awk '/browser_download_url/ { print $2 }' | grep 'linux-amd64' | sed 's/"//g') | tar -xz && sudo mv noti /usr/local/bin
 
 # install python linters
 pip install flake8 pylint yapf autopep8
+
+# diff-so-fancy config
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+git config --global color.ui true
+git config --global color.diff-highlight.oldNormal    "red bold"
+git config --global color.diff-highlight.oldHighlight "red bold 52"
+git config --global color.diff-highlight.newNormal    "green bold"
+git config --global color.diff-highlight.newHighlight "green bold 22"
+git config --global color.diff.meta       "yellow"
+git config --global color.diff.frag       "magenta bold"
+git config --global color.diff.commit     "yellow bold"
+git config --global color.diff.old        "red bold"
+git config --global color.diff.new        "green bold"
+git config --global color.diff.whitespace "red reverse"
 
 # *********************************************
 # ZSH setup
