@@ -12,14 +12,27 @@ cd config
 brew update
 
 # install brew packages
-brew install python tmux zsh zsh-completions zsh-syntax-highlighting autoenv wget
-
+brew install python tmux zsh zsh-completions zsh-syntax-highlighting autoenv wget bat noti fzf htop fd ncdu tldr ack diff-so-fancy
 
 # *********************************************
 # miscellany
 # *********************************************
 
-pip install virtualenv flake8
+pip install virtualenv flake8 csvkit
+
+# diff-so-fancy config
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+git config --global color.ui true
+git config --global color.diff-highlight.oldNormal    "red bold"
+git config --global color.diff-highlight.oldHighlight "red bold 52"
+git config --global color.diff-highlight.newNormal    "green bold"
+git config --global color.diff-highlight.newHighlight "green bold 22"
+git config --global color.diff.meta       "yellow"
+git config --global color.diff.frag       "magenta bold"
+git config --global color.diff.commit     "yellow bold"
+git config --global color.diff.old        "red bold"
+git config --global color.diff.new        "green bold"
+git config --global color.diff.whitespace "red reverse"
 
 # *********************************************
 # ZSH setup
