@@ -91,8 +91,9 @@ export EDITOR=vim
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export PATH="/Users/Ryan/anaconda2/bin:$PATH"
 alias cat='bat'
-alias preview="fd --type f | fzf --preview 'bat --color \"always\" {}'"
+alias preview="fzf --preview 'bat --color \"always\" {}'"
 # add support for ctrl+o to open selected file in VS Code
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
 alias top='htop'
