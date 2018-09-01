@@ -92,7 +92,7 @@ export EDITOR=vim
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias cat='bat'
-alias preview="fzf --preview 'bat --color \"always\" {}'"
+alias preview="fd --type f | fzf --preview 'bat --color \"always\" {}'"
 # add support for ctrl+o to open selected file in VS Code
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
 alias top='htop'
