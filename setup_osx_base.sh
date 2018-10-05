@@ -8,6 +8,9 @@ cd config
 # brew setup
 # *********************************************
 
+# install brew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 # update brew to ensure we have the latest packages
 brew update
 
