@@ -15,11 +15,15 @@ cd config
 brew update
 
 # install brew packages
-brew install python tmux zsh zsh-completions zsh-syntax-highlighting autoenv wget bat noti fzf htop fd ncdu tldr ack diff-so-fancy
+brew install python tmux zsh zsh-completions zsh-syntax-highlighting autoenv wget bat noti fzf htop fd ncdu tldr ack diff-so-fancy pyenv
 
 # *********************************************
 # miscellany
 # *********************************************
+
+# install python 3.7 and set as global
+pyenv install 3.7.0
+pyenv global 3.7.0
 
 pip install virtualenv flake8 csvkit
 
