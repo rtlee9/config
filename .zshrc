@@ -99,8 +99,8 @@ alias top='htop'
 alias du='ncdu --color dark'
 alias help='tldr'
 
-export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-eval "$(pyenv init -)"
+# pyenv
+eval "$(pyenv init -  --no-rehash)"
 
 # Force tmux to use 256 color
 alias tmux='_zsh_tmux_plugin_run -2'
