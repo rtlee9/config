@@ -53,7 +53,7 @@ alias tmux="TERM=screen-256color-bce tmux"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(tmux brew git bundler osx rake ruby pip zsh-syntax-highlighting)
+plugins=(tmux brew git bundler macos rake ruby pip zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -82,6 +82,8 @@ export EDITOR=vim
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+export PATH=/Library/PostgreSQL/12/bin:$PATH
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -108,3 +110,8 @@ alias tmux='_zsh_tmux_plugin_run -2'
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# Added by Amplify CLI binary installer
+export PATH="$HOME/.amplify/bin:$PATH"

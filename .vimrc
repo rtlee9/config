@@ -21,6 +21,8 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'w0rp/ale'
+Plugin 'psf/black'
+
 
 " Color schemes
 Plugin 'jnurmine/Zenburn'
@@ -46,6 +48,8 @@ let g:ale_set_quickfix = 0
 let g:ale_open_list = 1
 let g:ale_list_window_size = 5
 let g:ale_python_flake8_options ="--ignore=E402,E501,E302"
+
+autocmd FileType javascript setlocal equalprg=js-beautify\ --stdin
 
 " Color Scheme
 set t_Co=256 " says terminal has 256 colors
