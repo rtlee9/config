@@ -107,6 +107,8 @@ eval "$(pyenv init -  --no-rehash)"
 # Force tmux to use 256 color
 alias tmux='_zsh_tmux_plugin_run -2'
 
+alias python='python3'
+
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
