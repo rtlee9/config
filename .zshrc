@@ -118,3 +118,5 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export PATH=/Library/TeX/texbin:$PATH
 export MANPATH=/Library/TeX/Distributions/.DefaultTeX/Contents/Man:$MANPATH
 export PATH="$HOME/.amplify/bin:$PATH"
+source $HOMEBREW_PREFIX/opt/chruby/share/chruby/chruby.sh # Or run `brew info chruby` to find out installed directory
+
