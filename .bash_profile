@@ -33,4 +33,3 @@ HISTFILESIZE=10000
 # added by Anaconda2 4.2.0 installer
 export PATH="/Users/Ryan/anaconda2/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
