@@ -115,4 +115,6 @@ source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Added by Amplify CLI binary installer
+export PATH=/Library/TeX/texbin:$PATH
+export MANPATH=/Library/TeX/Distributions/.DefaultTeX/Contents/Man:$MANPATH
 export PATH="$HOME/.amplify/bin:$PATH"
