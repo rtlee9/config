@@ -67,6 +67,7 @@ set splitright
 " Use case insensitive search, except when using capital letters
 set ignorecase
 set smartcase
+set smartindent
 
 " Set paste mode
 set pastetoggle=<F2>
