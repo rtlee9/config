@@ -9,8 +9,6 @@ export ZSH=~/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
-alias tmux="TERM=screen-256color-bce tmux"
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -120,3 +118,4 @@ export MANPATH=/Library/TeX/Distributions/.DefaultTeX/Contents/Man:$MANPATH
 export PATH="$HOME/.amplify/bin:$PATH"
 source $HOMEBREW_PREFIX/opt/chruby/share/chruby/chruby.sh # Or run `brew info chruby` to find out installed directory
 
+ZSH_TMUX_UNICODE=true
